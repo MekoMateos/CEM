@@ -42,7 +42,7 @@ header {
   align-items: center;
   justify-content:space-between;
   background: transparent;
-  padding:22px 15%;
+  padding:22px 5%;
   border-bottom: 1px solid transparent;
   transition: all .45s ease;
 
@@ -50,7 +50,6 @@ header {
 
 header.sticky {
   background-color:rgb(178, 68, 137);
-  opacity: 0.8;
   border-bottom: 1px solid #fff;
   padding:12px 15%;
 }
@@ -64,21 +63,21 @@ header.sticky {
 }
 .navlist {
 display: flex;
+
 }
 
 .navlist a {
   color:var(--text-color);
   font-size: 20px;
   font-weight: 500;
-  margin:0 25px;
+  margin: 25px;
   transition: all .45s ease;
 
 }
 
 .navlist a:hover {
-  color:var(--main-color);
+  
   font-weight: 600;
-  background-color: white;
   padding:8px;
   border-radius: 8px;
 
@@ -106,7 +105,7 @@ section {
 
 .home {
   position: relative;
-  height: 130vh;
+  height: 135vh;
   width:100%;
   background-image:url(../Home/Images/182560296_1747017575445187_985802686018756785_n-1-e1659294648162.jpg);
   background-position: center;
@@ -154,8 +153,9 @@ section {
 }
 
 .home-text p {
-  background-color: #2a2a2a;
+  background-color:var(--text-color);
   padding:22px;
+  color:black;
   font-size: var(--p-font);
   line-height: 1.8;
   margin-bottom: 40px;
@@ -282,7 +282,7 @@ section {
 
 .courses-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   gap: 2rem;
   align-items: center;
   margin-top: 4rem;
@@ -318,6 +318,7 @@ section {
   color: var(--main-color);
   font-size: 18px;
   font-weight: 700;
+  display:none;
 }
 
 .courses-text h3 {
@@ -336,6 +337,7 @@ section {
   line-height: 30px;
   letter-spacing: 1px;
   margin-bottom: 30px;
+  display: none;
 
 }
 
@@ -360,7 +362,7 @@ section {
   letter-spacing: 1px;
 }
 
-/*......Third Section.......... */
+/*......Fourth Section.......... */
 .services {
   background-color: #fff;
   opacity: 0.8;
@@ -393,7 +395,6 @@ section {
 }
 
 .box {
-  background: var(--text-color);
   color:black;
   padding:35px 45px;
   border-radius:8px;
@@ -418,5 +419,412 @@ section {
   line-height: 1.8;
   margin-bottom: 25px;
 }
+
+
+/*  Fifth Section */
+
+.partners-content {
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px, auto)) ;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 5rem;
+}
+
+.col {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+
+}
+
+.col img {
+   width: 200px;
+   height: 200px;
+  border-radius: 8px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+
+/* Contact*/
+
+.contact {
+  background-color: var(--text-color);
+  color:#2a2a2a;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.contact-text h4{
+  color:var(--bg-color);
+  margin: 18px 0;
+  font-size: 20px;
+  font-weight: 600;
+
+}
+
+.contact h2 {
+  font-size: var(--h2-font);
+  line-height: 1;
+}
+
+.contact p {
+  font-size: var(--p-font);
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.list {
+  margin-bottom: 2.8rem;
+}
+
+.list ul li {
+  margin-bottom: 12px;
+}
+
+.list ul li a {
+  display: block;
+  color:var(--bg-color);
+  font-size: 14px;
+  transition: all .45s ease;
+}
+
+.contact-icons i {
+  height: 45px;
+  width: 45px;
+  background-color:var(--second-color);
+  color:white;
+  font-size: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin-right: 15px;
+  transition: all .45s ease;
+}
+
+.contact-icons i:hover {
+  background-color: var(--main-color);
+}
+
+.contact-form {
+  position:relative;
+}
+
+.contact-form form input, form textarea {
+  background-color: whitesmoke;
+  width:100%;
+  padding:14px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 240px;
+}
+
+.contact-form .submit {
+  display: inline-block;
+  font-size: 16px;
+  background-color: var(--bg-color);
+  color:white;
+  width:160px;
+  transition: all .45s ease;
+}
+
+.contact-form .submit:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* End */
+
+.end {
+  padding:20px 15%;
+  display: flex;
+  flex-wrap:wrap ;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.last-text p {
+  font-size: 14px;
+}
+.top i {
+  padding:10px;
+  border-radius: 8px;
+  font-size: 15px;
+  background: var(--second-color);
+  color:white;
+}
+
+/* Mobile */
+
+@media (max-width:1480px){
+  header {
+    padding:12px 2.5%;
+    transition: .1s;
+  }
+
+  header.sticky {
+    padding:10px 2.5%;
+    transition: .1s;
+  }
+
+  .section {
+    padding:110px 3% 60px;
+  }
+
+  .end {
+    padding:15px 3%;
+  }
+}
+
+@media (max-width:1200px){
+  .row img {
+      width: fit-content
+    }
+}
+
+@media (max-width:1100px) {
+  :root {
+    --big-font: 4rem;
+      --h2-font: 2.5rem;
+      --p-font: 1rem;
+      transition: .1s;
+  }
+  
+ 
+
+  .home {
+      background-image: url(../Home/Images/182560296_1747017575445187_985802686018756785_n-1-e1659294648162.jpg);
+      background-position: left;
+      height: 94vh;
+  }
+
+  .home-text {
+    padding-top: 50px;
+  }
+
+  .home-text h3 {
+    font-size: 2.5rem;
+  }
+
+.row img {
+width:fit-content;
+}
+}
+
+@media (max-width:900px){
+  .navlist li a  {
+font-size: 20px;
+  }
+}
+
+@media (max-width:900px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+
+  .about-img{
+    text-align: center;
+  }
+
+  .about-img img{
+    width:100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .contact {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width:840px) {
+
+  .home {
+      background:url(/Home/Images/small.jpg);
+      height: 100vh;
+    }
+#menu-icon {
+  display: block;
+}
+
+
+  .navlist {
+    position:absolute;
+    top:-1000px;
+    right:0;
+    left:0;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    transition: all .45s ease;
+    background-color: var(--second-color);
+   
+  }
+.navlist a {
+  display: block;
+  margin:17px;
+  font-size: 20px;
+  transition: all .45s ease;
+  color:var(--text-color);
+}
+.navlist a:hover{
+  color:var(--main-color);
+}
+
+.navlist a.active {
+  color:var(--text-color);
+}
+
+.navlist.open{
+  top:100%;
+}
+}
+
+@media (max-width:500px){
+html {
+  overflow-x: hidden;
+}
+
+  body {
+    overflow-x:hidden;
+  }
+
+  .home-text h1 {
+    font-size: 40px;
+    padding-bottom: 30px;
+    transition: all .45s ease;
+  }
+
+  .courses-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  }
+
+    #menu-icon {
+      display: block;
+      padding-right: 30px;
+    }
+
+        .main-text p {
+      font-size: 14px;
+      transition: all .45s ease;
+    }
+
+    .partners .center-text h5 {
+      font-size:14px ;
+    } 
+
+        .partners-content {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(80px, auto));
+          align-items: center;
+          margin-top: 2rem;
+        }
+    
+        .col img {
+          width: 80px;
+          height: 80px;
+        }
+
+    
+    
+    }
+
+        @media (max-width:400px) {
+    
+          body {
+            overflow-x: hidden;
+          }
+          
+        .home {
+          position: relative;
+          background-position: center;
+       
+          }
+        .home-text span {
+          font-size: 16px;
+        }
+          .home-text h1 {
+            display: none;
+          }
+
+          .home-text p {
+            font-size: 12px;
+          }
+
+          .btn {
+            font-size: 10px;
+          }
+    
+          .courses-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+          }
+
+          .courses .center-text {
+            margin-top: -100px;
+          }
+    
+          #menu-icon {
+            display: block;
+            padding-right: 30px;
+          }
+    
+          .main-text p {
+            font-size: 11px;
+            transition: all .45s ease;
+          }
+    
+          .partners .center-text h5 {
+            font-size: 13px;
+          }
+    
+          .partners-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(80px, auto));
+            align-items: center;
+            margin-top: 2rem;
+          }
+    
+          .col img {
+            width: 80px;
+            height: 80px;
+          }
+
+          .services .main-text {
+            margin-top: -100px;
+          }
+
+          .partners .center-text {
+            margin-top: -100px;
+          }
+          .box {
+            padding:12px 40px;
+          }
+
+          .contact-text h2 {
+            font-size: 30px;
+          }
+
+           .contact-text h4{
+            font-size: 16px;
+           }
+
+          
+        }
+        
 
 
